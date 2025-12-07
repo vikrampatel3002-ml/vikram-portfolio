@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram Patel - Home</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #121212);
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 0;
+            background: rgba(0,0,0,0.85);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover { color: #00eaff; }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00eaff, #7b2ff7);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .text-box p { font-size: 16px; color: #d6d6d6; line-height: 1.5; }
+
+        .social-row { display: flex; gap: 12px; margin-top: 15px; flex-wrap: wrap; justify-content: center; }
+        .social-row a { color: #00eaff; font-size: 20px; text-decoration: none; transition: transform 0.3s ease; }
+        .social-row a:hover { transform: translateY(-3px); }
+
+        .btns { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .btns a { padding: 10px 20px; background: #00eaff; color: black; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s ease; }
+        .btns a:hover { background: white; }
+
+        .photo-box {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #00eaff;
+            background: rgba(255, 255, 255, 0.05);
+            margin-top: 30px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .photo-box:hover { transform: scale(1.05); box-shadow: 0 0 25px #00eaff; }
+
+        .section-title { font-size: 28px; margin-bottom: 40px; background: linear-gradient(90deg, #00eaff, #7b2ff7); -webkit-background-clip: text; color: transparent; }
+
+        .cards-container { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 20px; scroll-snap-type: x mandatory; }
+        .cards-container::-webkit-scrollbar { height: 8px; }
+        .cards-container::-webkit-scrollbar-thumb { background: #00eaff; border-radius: 4px; }
+
+        .card { min-width: 220px; max-width: 260px; height: 350px; flex: 0 0 auto; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; text-align: center; transition: transform 0.5s ease, box-shadow 0.5s ease; scroll-snap-align: start; cursor: pointer; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,234,255,0.5); }
+        .card h3 { font-size: 20px; margin-bottom: 10px; background: linear-gradient(90deg, #00eaff, #7b2ff7); -webkit-background-clip: text; color: transparent; }
+        .card p { font-size: 14px; color: #d6d6d6; min-height: 70px; }
+
+        @media (max-width: 900px) {
+            .text-box h1 { font-size: 24px; }
+            .text-box p { font-size: 15px; }
+            .photo-box { width: 200px; height: 200px; }
+            .section-title { font-size: 24px; }
+            .card { min-width: 180px; height: 300px; }
+        }
+
+        @media (max-width: 600px) {
+            nav ul { gap: 10px; flex-wrap: wrap; }
+            nav ul li a { font-size: 14px; }
+            .btns { gap: 5px; }
+            .cards-container { gap: 10px; }
+        }
+
+        @media (max-width: 400px) {
+            .text-box h1 { font-size: 20px; }
+            .text-box p { font-size: 14px; }
+            .photo-box { width: 150px; height: 150px; font-size: 16px; }
+            .section-title { font-size: 20px; }
+            .card { min-width: 160px; height: 280px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="text-box">
+        <h1>Hi, I'm Vikram Patel</h1>
+        <p>Machine Learning Engineer<br>Building intelligent systems that solve real-world problems.<br><span style='color:#00eaff;'>Empowering ideas with intelligent automation.</span></p>
+        <div class="social-row">
+            <a href="https://www.instagram.com/vikram_patel_550/"><img src="c:\Users\vikrampatel\Downloads\Icons8\icons8-instagram-50.png" alt=""></a>
+            <a href="#"><img src="c:\Users\vikrampatel\Downloads\Icons8 (1)\icons8-x-50.png" alt=""></a>
+            <a href="#">🔗</a>
+        </div>
+        <div class="btns">
+            <a href="#services">View Services</a>
+            <a href="#projects">View Projects</a>
+        </div>
+    </div>
+    <div class="photo-box">Your Image Here</div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <h3 style="color:#00eaff; margin-bottom:15px;">ML Projects</h3>
+    <div class="cards-container">
+        <div class="card">
+            <h3>ML Project 1</h3>
+            <p>Space to add your ML project details.</p>
+        </div>
+        <div class="card">
+            <h3>ML Project 2</h3>
+            <p>Space to add your ML project details.</p>
+        </div>
+    </div>
+    <h3 style="color:#00eaff; margin:50px 0 15px 0;">Video Editing Projects</h3>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Video Project 1</h3>
+            <p>Space to add your video editing project.</p>
+        </div>
+        <div class="card">
+            <h3>Video Project 2</h3>
+            <p>Space to add your video editing project.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Services</h2>
+    <h3 style="color:#00eaff; margin-bottom:15px;">ML & AI Services</h3>
+    <div class="cards-container">
+        <div class="card">
+            <h3>ML Model Development</h3>
+            <p>Designing and deploying advanced machine learning models tailored to your needs.</p>
+        </div>
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <p>Providing insights from complex datasets with visualization and interpretation.</p>
+        </div>
+        <div class="card">
+            <h3>AI Automation</h3>
+            <p>Creating intelligent automation systems to improve efficiency and productivity.</p>
+        </div>
+    </div>
+    <h3 style="color:#00eaff; margin:50px 0 15px 0;">Video Editing Services</h3>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Part-Time Video Editing</h3>
+            <p>Video editing services for personal or professional projects.</p>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I'm Vikram Patel from Jodhpur, Rajasthan. I am pursuing a BCA from Maulana Azad University. I have strong skills in Python, Flask web development, and MongoDB for databases. I enjoy building intelligent systems and creating visually appealing web applications. Always eager to learn and take on challenging projects to enhance my knowledge and skills.</p>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>E-mail:  <a href="mailto:vikrampatel3002@gmail.com" style="color:#00eaff;">vikrampatel3002@gmail.com</a></p>
+    <p>Social Media Links:</p>
+    <div class="social-row">
+        <a href="https://www.instagram.com/vikram_patel_550/"><img src="c:\Users\vikrampatel\Downloads\Icons8\icons8-instagram-50.png" alt=""></a>
+        <a href="#"><img src="c:\Users\vikrampatel\Downloads\Icons8 (1)\icons8-x-50.png" alt=""></a>
+    </div>
+</section>
+
+</body>
+</html>
